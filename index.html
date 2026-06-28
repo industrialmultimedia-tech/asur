@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASUR — Asociación de Sordos del Uruguay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-fixed"></div>
+
+  <div class="aura-wrap" id="aura-wrap">
+    <div class="orb orb-blue"></div>
+    <div class="orb orb-pink"></div>
+    <div class="orb orb-purple"></div>
+    <div class="orb orb-top"></div>
+  </div>
+
+  <svg class="grain grain-deep" xmlns="http://www.w3.org/2000/svg">
+    <filter id="gf2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.52" numOctaves="3" stitchTiles="stitch" result="noiseOut"/>
+      <feColorMatrix type="saturate" values="0" in="noiseOut" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay"/>
+    </filter>
+    <rect width="100%" height="100%" fill="transparent" filter="url(#gf2)" opacity="0.35"/>
+  </svg>
+
+  <svg class="grain" xmlns="http://www.w3.org/2000/svg">
+    <filter id="gf" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="5" stitchTiles="stitch" result="noiseOut"/>
+      <feColorMatrix type="saturate" values="0" in="noiseOut" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay"/>
+    </filter>
+    <rect width="100%" height="100%" fill="transparent" filter="url(#gf)" opacity="0.5"/>
+  </svg>
+
+  <nav id="nav">
+    <a class="nav-brand" href="#">asur</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#uruguay">Uruguay</a></li>
+      <li><a href="#actividades">Actividades</a></li>
+      <li><a href="#azure">Más Allá</a></li>
+    </ul>
+    <a class="nav-cta" href="#newsletter">Suscribirme</a>
+  </nav>
+
+  <div id="content">
+
+    <section id="hero">
+      <p class="hero-eyebrow">Asociación de Sordos del Uruguay</p>
+      <h1 class="hero-title">asur</h1>
+      <p class="hero-sub">Más allá del sonido</p>
+      <p class="hero-desc">
+        Una comunidad que rompe barreras, redefine la experiencia sensorial y construye un Uruguay más accesible para todas las personas sordas e hipoacúsicas.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#sobre">Conocer la asociación</a>
+        <a class="btn-secondary" href="#newsletter">Recibir novedades</a>
+      </div>
+     
+    </section>
+
+    <section id="sobre">
+      <p class="section-eyebrow reveal">Nuestra historia</p>
+      <h2 class="section-title reveal reveal-delay-1">QUIÉNES<br>SOMOS</h2>
+      <p class="section-body reveal reveal-delay-2">
+        ASUR es la organización referente de la comunidad sorda en Uruguay. Fundada con el compromiso de defender los derechos, la identidad cultural y la plena participación de las personas sordas en la sociedad.
+      </p>
+
+      <div class="sobre-grid">
+        <div class="sobre-card-big reveal reveal-delay-1">
+          <div>
+            <h3>NUESTRA MISIÓN</h3>
+            <p>
+              Trabajamos para que cada persona sorda en Uruguay pueda desarrollarse plenamente — en la educación, el trabajo, la cultura y la vida cotidiana. Promovemos la Lengua de Señas Uruguaya (LSU) como lengua oficial de la comunidad sorda y luchamos por su reconocimiento e inclusión en todos los ámbitos.
+            </p>
+            <p style="margin-top: 14px;">
+              Bajo el liderazgo de autoridades como <strong>Maximiliano Amaral</strong> y <strong>Rodrigo González</strong>, y como miembros activos de la <strong>Federación Mundial de Sordos</strong> y <strong>FENASUR</strong>, aseguramos la representación y defensa de nuestra comunidad a nivel nacional e internacional.
+            </p>
+            <p style="margin-top: 14px;">
+              Creemos en una sociedad que celebre la diversidad sensorial, no que la corrija. La sordera no es una limitación: es una forma diferente y rica de estar en el mundo.
+            </p>
+          </div>
+          <div class="sobre-pillars">
+            <div class="pillar">
+              <div class="pillar-dot"></div>
+              <p class="pillar-text"><strong>Derechos e igualdad</strong> — Representamos a la comunidad ante organismos públicos y privados para garantizar acceso igualitario.</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-dot"></div>
+              <p class="pillar-text"><strong>Lengua de Señas Uruguaya</strong> — Difundimos y enseñamos LSU como patrimonio cultural de la comunidad sorda.</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-dot"></div>
+              <p class="pillar-text"><strong>Cultura e identidad</strong> — Organizamos encuentros, eventos y proyectos que celebran la identidad Sorda con mayúscula.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <p class="card-label">Años de historia</p>
+          <p class="card-value">90+</p>
+          <p class="card-desc">Años de lucha, comunidad y construcción colectiva en Uruguay.</p>
+        </div>
+
+        <div class="card reveal reveal-delay-3">
+          <p class="card-label">Integrantes</p>
+          <p class="card-value">2.000+</p>
+          <p class="card-desc">Personas sordas, familias y aliados que forman parte de la red ASUR.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="azure">
+      <div class="azure-inner">
+        <p class="section-eyebrow reveal">Experiencia sensorial</p>
+
+        <div class="azure-layout">
+          <div class="azure-img-wrap reveal">
+            <img
+              src="img/WhatsApp Image 2026-05-25 at 4.13.54 PM.jpeg"
+              alt="Instalación Azure — experiencia sensorial inmersiva"
+              loading="lazy"
+            >
+            <div class="azure-img-overlay"></div>
+          </div>
+
+          <div class="azure-content">
+            <p class="section-eyebrow reveal">Proyecto</p>
+            <h3 class="reveal reveal-delay-1">MÁS ALLÁ<br>DEL SONIDO</h3>
+            <p class="reveal reveal-delay-2">
+              <em>Más Allá del Sonido</em> es una instalación artística e interactiva diseñada por ASUR para que personas sordas e hipoacúsicas puedan vivir la música de manera integral — a través de la vibración, la luz y el movimiento.
+            </p>
+            <p class="reveal reveal-delay-3">
+              La experiencia conecta esferas sensoriales físicas con una interfaz digital sincronizada en tiempo real. Cada esfera responde a la música con pulsos de vibración y secuencias de luz cuidadosamente diseñadas, mientras la pantalla muestra letras y animaciones que acompañan el ritmo.
+            </p>
+            <p class="reveal reveal-delay-3">
+              El proyecto nació de una pregunta simple: ¿qué pasa cuando la música deja de ser solo sonido? La respuesta es <em>Azure</em> — una paleta de sensaciones que convierte cada canción en una experiencia completa y accesible.
+            </p>
+
+            <div class="azure-tags reveal reveal-delay-4">
+              <span class="tag">Vibración</span>
+              <span class="tag">Sincronía lumínica</span>
+              <span class="tag">Tiempo real</span>
+              <span class="tag">Accesibilidad</span>
+              <span class="tag">Arte interactivo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="uruguay">
+      <p class="section-eyebrow reveal">Contexto</p>
+      <h2 class="section-title reveal reveal-delay-1">URUGUAY<br>Y LA COMUNIDAD<br>SORDA</h2>
+
+      <div class="uruguay-layout">
+        <div>
+          <div class="uruguay-text">
+            <p class="reveal">
+              Uruguay es un país de poco más de 3,5 millones de habitantes, reconocido en la región por sus políticas progresistas y su compromiso con los derechos humanos. Sin embargo, para la comunidad sorda el camino hacia la plena inclusión aún está en construcción.
+            </p>
+            <p class="reveal reveal-delay-1">
+              Se estima que entre el 5% y el 7% de la población uruguaya tiene algún tipo de pérdida auditiva, con distintos grados de severidad. De ese universo, una parte significativa forma parte de la cultura Sorda, comunidad que comparte la Lengua de Señas Uruguaya (LSU) como primera lengua y que tiene una identidad cultural propia y vibrante.
+            </p>
+            <p class="reveal reveal-delay-2">
+              En 2001, Uruguay reconoció oficialmente la LSU como lengua natural de la comunidad sorda, un hito fundamental que ASUR ayudó a impulsar. Desde entonces, el movimiento por la accesibilidad ha crecido en educación, medios de comunicación y espacios culturales.
+            </p>
+          </div>
+
+          <div class="uruguay-facts">
+            <div class="fact-card reveal reveal-delay-1">
+              <p class="fact-num">180K+</p>
+              <p class="fact-label">personas con pérdida auditiva en Uruguay</p>
+            </div>
+            <div class="fact-card reveal reveal-delay-2">
+              <p class="fact-num">2001</p>
+              <p class="fact-label">año de reconocimiento oficial de la LSU</p>
+            </div>
+            <div class="fact-card reveal reveal-delay-3">
+              <p class="fact-num">3,5M</p>
+              <p class="fact-label">habitantes en Uruguay</p>
+            </div>
+            <div class="fact-card reveal reveal-delay-4">
+              <p class="fact-num">19</p>
+              <p class="fact-label">departamentos en el territorio nacional</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="uruguay-img reveal reveal-delay-2">
+          <img
+            src="img/b49197e7e4b3fad2e1b49190ec51f69d.jpg"
+            alt="Montevideo, Uruguay"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="actividades">
+      <p class="section-eyebrow reveal">Lo que hacemos</p>
+      <h2 class="section-title reveal reveal-delay-1">NUESTRAS<br>ACTIVIDADES</h2>
+
+      <div class="actividades-grid">
+        <div class="act-card reveal reveal-delay-1">
+          <h4>Defensa de derechos</h4>
+          <p>Representamos a la comunidad sorda ante instituciones públicas y privadas, impulsando leyes y políticas de accesibilidad que garanticen igualdad de oportunidades.</p>
+        </div>
+        <div class="act-card reveal reveal-delay-2">
+          <h4>Cursos de LSU</h4>
+          <p>Ofrecemos formación en Lengua de Señas Uruguaya para personas oyentes, familias y profesionales que quieran comunicarse con la comunidad sorda.</p>
+        </div>
+        <div class="act-card reveal reveal-delay-3">
+          <h4>Cultura accesible</h4>
+          <p>Organizamos eventos, muestras y proyectos artísticos que celebran la identidad Sorda y abren la cultura a toda la ciudadanía con o sin audición.</p>
+        </div>
+        <div class="act-card reveal reveal-delay-1">
+          <h4>Tecnología e innovación</h4>
+          <p>Desarrollamos soluciones digitales e instalaciones interactivas que transforman la experiencia cultural para personas sordas, usando vibración, luz y animación sincronizada.</p>
+        </div>
+        <div class="act-card reveal reveal-delay-2">
+          <h4>Educación inclusiva</h4>
+          <p>Trabajamos con escuelas, colegios y universidades para implementar recursos y metodologías que aseguren el acceso pleno al aprendizaje de estudiantes sordos.</p>
+        </div>
+        <div class="act-card reveal reveal-delay-3">
+          <h4>Red internacional</h4>
+          <p>Participamos en redes regionales e internacionales de organizaciones de sordos, intercambiando experiencias y construyendo agendas conjuntas de accesibilidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" style="max-width: 1160px; margin: 0 auto;">
+      <div class="newsletter-box reveal">
+        <div class="newsletter-text">
+          <p class="section-eyebrow" style="margin-bottom: 10px;">Mantenete al tanto</p>
+          <h2>Recibí noticias<br>de ASUR</h2>
+          <p style="margin-top: 18px;">
+            Suscribite a nuestra newsletter y enterate de actividades, proyectos, eventos y novedades sobre accesibilidad y comunidad sorda en Uruguay.
+          </p>
+        </div>
+
+        <div>
+          <div class="newsletter-form" id="newsletter-form">
+            <div class="form-group">
+              <label for="nl-nombre">Tu nombre</label>
+              <input type="text" id="nl-nombre" placeholder="María García" autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="nl-email">Tu correo electrónico</label>
+              <input type="email" id="nl-email" placeholder="maria@ejemplo.com" autocomplete="email">
+            </div>
+            <button class="form-submit" id="nl-submit" type="button" onclick="handleNewsletter()">
+              Suscribirme a la newsletter
+            </button>
+            <p class="form-note">Al suscribirte aceptás recibir comunicaciones de ASUR.</p>
+          </div>
+
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✦</div>
+            <h4>¡Ya estás suscrito/a!</h4>
+            <p>Pronto recibirás noticias de ASUR en tu bandeja de entrada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donar" style="max-width: 1160px; margin: 0 auto;">
+      <div class="donate-box reveal">
+        <div class="donate-orbs">
+          <div class="donate-orb-1"></div>
+          <div class="donate-orb-2"></div>
+        </div>
+
+        <div class="donate-text">
+          <span>¿Querés apoyarnos?</span>
+          <h2>Tu aporte<br>hace la diferencia</h2>
+          <p>
+            Cada contribución nos ayuda a ayudar a que más personas sordas puedan participar plenamente en la vida cultural del Uruguay.
+          </p>
+        </div>
+
+        <div class="donate-action">
+          <button class="btn-donate" id="btn-donar" onclick="handleDonar()">
+            Donar ahora
+          </button>
+          <div class="donate-amounts">
+            <span class="amount-pill" data-amount="200">$100</span>
+            <span class="amount-pill" data-amount="500">$500</span>
+            <span class="amount-pill" data-amount="1000">$1000</span>
+            <span class="amount-pill" data-amount="otro">Otro</span>
+          </div>
+          <p class="donate-feedback" id="donate-feedback"></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+
+        <div class="footer-top">
+          <div class="footer-brand-block">
+            <span class="footer-brand">asur</span>
+          </div>
+
+          <nav class="footer-nav">
+            <span class="footer-nav-label">Navegación</span>
+            <ul>
+              <li><a href="#sobre">Quiénes somos</a></li>
+              <li><a href="#actividades">Actividades</a></li>
+              <li><a href="#uruguay">Uruguay sordo</a></li>
+              <li><a href="#azure">Más Allá del Sonido</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-contact-block">
+            <span class="footer-nav-label">Contacto</span>
+            <p class="footer-address">Hermanos Gil 945, Montevideo</p>
+            <div class="footer-actions">
+              <a class="footer-btn" href="mailto:contacto@asur.uy">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                contacto@asur.uy
+              </a>
+              <a class="footer-btn" href="tel:+59823054218">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 2.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+                2305 4218
+              </a>
+              <a class="footer-btn footer-btn-cta" href="#newsletter">
+                Suscribirme a la newsletter
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Asociación de Sordos del Uruguay</p>
+          <div class="footer-bottom-links">
+            <span>Miembro de la <strong>Federación Mundial de Sordos</strong></span>
+            <span class="footer-dot">·</span>
+            <span>FENASUR</span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-database-compat.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
